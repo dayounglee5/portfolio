@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>goodreads</title>
+ <link rel="normalize" href="styles/normalizesheet.css">
+ <link rel="stylesheet" href="styles/stylesheet.css">
+<link rel="aboutme" href="aboutme.html">
+<link rel="myprojects" href="myprojects.html">
+<link rel="resume" href="resume.html">
+</head>
+
+<body class="goodreads">
+    <header>
+        <a href="index.html" class="logo">
+          <img src="media/pictures/LOGO.png" alt="dayoung-logo">
+        </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden >
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav>
+            <ul>
+              <li><a href='resume.html'>resume</a></li>
+              <li><a href="aboutme.html">about me</a></li>
+              <li><a href="myprojects.html">my projects</a></li>
+            </ul>
+          </nav>
+    
+        </header>
+        <div class="goodreads-container">
+                
+            <section class="goodreads-content-pt1">
+                <h1>goodreads redesign</h1>
+                <img src="media/pictures/GoodreadsMockup.png" alt="goodreads-mockup" width="1100">
+    
+                <div class="goodreads-casestudy">
+                    <div class="goodreads-casestudy-box">
+                    <b>case study:</b>
+                    <p>my first design project, where i chose to redesign the app/website,
+                        <b>goodreads!</b> as a book lover myself and someone who uses goodreads, i chose to redesign <b>goodreads</b> in order to provide book lovers like me a more seamless, visually-appealing experience.</p>
+                    </div>
+                </div>
+    
+                <div class="goodreads-tableofcontents">
+                    <ul>
+                        <li><a href="#introduction">introduction</a></li>
+                        <li class="indent"><a href="#tools-used">tools used</a></li>
+                        <li><a href="#problemswithcurrentdesign">problems with the current website</a></li>
+                        <li class="indent"><a href="#user-research">user research</a></li>
+                        <li><a href="#process">process</a></li>
+                        <li class="indent"><a href="#typography-color">typography & color</a></li>
+                        <li class="indent"><a href="#low-fi">low-fidelity wireframes</a></li>
+                        <li class="indent"><a href="#prototype">my final prototype</a></li>
+                        <li><a href="#impact">impact</a></li>
+                        <li><a href="#nextsteps">next steps</a></li>
+                        <li><a href="#takeaways">my takeaways</a></li>
+    
+                    </ul>
+                </div>
+                <hr class="line">
+                <div class="introduction-goodreads" id="introduction-goodreads">
+                    <h2>introduction</h2>
+                    <p><b>goodreads</b> is a popular social cataloging platform for book lovers, allowing users to track their reading, write reviews, and discover new books based on recommendations and community interactions. however, despite its widespread usage, many users feel that the website and app are outdated in terms of design and user experience. the goals of this project was to explore how a redesign would improve the platform’s usability, user engagement, and overall appeal, while retaining its core functionality.</p>
+                </div>
+                <div class="tools-used">
+                    <h2>tools used</h2>
+                    <ul>
+                        <li>figma</li>
+    
+                    </ul>
+                </div>
+                <hr class="line">
+                <div class="problemswithcurrentdesign" id="problemswithcurrentdesign">
+                    <h2>problems with the current website:</h2>
+                    <h3><b>outdated user interface</b></h3>
+                    <ul>
+                        <li>the current design felt cluttered and lacked a modern design, such as a clean layout, intuitive navigation, and a strong visual hierarchy</li>
+                        <li class="baddesign1"><img src="media/pictures/GoodreadsBadDesign1.png" alt="baddesign1" width="600"></li>
+                        
+                    </ul>
+                    <h3><b>inefficient shelving and book management</b></h3>
+                    <ul>
+                        <li>the process of adding books to shelves and managing “to-read” lists was awkward. there was no easy way for the user to bulk organize and a way to filter or sort their shelves</li>
+                        <li class="bad-design-list">
+                            <div class="shelving-images">
+                        <img src="media/pictures/GoodreadsBadDesign2.png" alt="baddesign2" width="243" class="bad-design1">
+                        <img src="media/pictures/GoodreadsBadDesign3.png" alt="baddesign3" width="600" class="bad-design2">
+                        </div>
+                        </li>
+    
+                    </ul>
+                    <h3><b>weak community interaction</b></h3>
+                    <ul>
+                        <li>despite being designed as a social platform, goodreads lacked robust community interaction features. its discussion forums and groups are outdated and hard to navigate.</li>
+                        <li class="bad-design-list">
+                            <div class="shelving-images">
+                        <img src="media/pictures/GoodreadsBadDesign4.png" alt="baddesign3" width="300" class="bad-design3">
+                        <img src="media/pictures/GoodreadsBadDesign5.png" alt="baddesign3" width="650" class="bad-design4">
+                    </div>
+                    </li>
+                        
+                    </ul>
+                </div>
+                <div class="userresearch" id="user-research">
+                    <h2>user research</h2>
+                    <p>i interviewed <b>two users</b> to better understand the pain points of this website. i knew that there were a lot of problems with the current design, so through these <b>two user</b> interviews, i was able to better understand what certain design aspects had to be fixed!</p>
+                </div>
+    
+                <div class="userresearch2">
+                    <div class="subject-a">
+                    <h3><u>subject a:</u></h3>
+                    <p>subject a has <b>never used</b> goodreads before</p>
+                    <ul>
+                        <li><b>pain points:</b></li>
+                        <li>❌ confusing home screen</li>
+                        <li>❌ too cluttered</li>
+                        <li>❌ overall poor layout</li>
+                    </ul>
+                    </div>
+                    <div class="subject-b">
+                        <h3><u>subject b:</u></h3>
+                        <p>subject b <b>occasionally uses</b> goodreads</p>
+                        <ul>
+                            <li><b>pain points:</b></li>
+                            <li>❌ confusing home screen</li>
+                            <li>❌ unnecessary animations and scripts</li>
+                            <li>❌ poor categorization</li>
+                        </ul>
+                        </div>
+                </div>
+                <hr class="line">
+                <div class="process" id="process">
+                    <h2>process</h2>
+                    <p>from the two users that i interviewed, i was able to understand what the problems i wanted to focus on fixing. the primary object of the redesign was to modernize the platform, enhance user engagement, and improve the user experience across both web and mobile, and that is what i wanted to achieve when it came to my final design.</p>
+                    <h3 id="typography-color">typography & color</h3>
+                    <h3>color scheme</h3>
+                    <div class="color-scheme">
+                        <h4>primary colors</h4>
+                        <div class="circlefilled"></div>
+                        <div class="circlefilled"></div>
+                        <h4>secondary colors</h4>
+                        <div class="circlefilled"></div>
+                        <div class="circlefilled"></div>
+                        <div class="circlefilled"></div>
+                        <h4>tertiary colors</h4>
+                        <div class="circlefilled"></div>
+                        <div class="circlefilled"></div>
+                        <div class="circlefilled"></div>
+                    </div>
+                    <h3>typography</h3>
+                    <img src="media/pictures/goodreads%20fonts.png" alt="goodreadsfonts" width="300" class="goodreads-fonts">
+                </div>
+                <div class="wireframes" id="low-fi">
+                    <h3>low-fidelty wireframes (mobile)</h3>
+                     <div class="wireframe-container">
+                    <img src="media/pictures/GoodreadsMobileLowFi1.png" alt="lowfi1" class="lowfi1" width="300">
+                    <img src="media/pictures/GoodreadsMobileLowFi2.png" alt="lowif2" class="lowfi2" width="300">
+                
+                    <p class="wireframe-mobile-explanation">these two low-fidelity wireframes for a goodreads mobile app aim to enhance the user experience by focusing on <b>book discovery, reading progress tracking, engagement, and navigation efficiency.</b> they prioritize a structured layout that helps users seamlessly browse, organize, and interact with books.
+                    both designs are structured to improve the user experience in discovering, tracking, and engaging with books. the <b>first wireframe (left)</b> emphasizes book discovery through categories and progress tracking, while the <b>second one (right)</b> focuses more on engagement through carousels and detailed book descriptions.</p>
+                     </div>
+                      
+    
+                    <h3>low-fidelity wireframes (desktop)</h3>
+                    <div class="wireframe-container">
+                    <img src="media/pictures/GoodreadsLowFiDesktop1.png" alt="lowfidesktop1" class="lowfi3" width="300">
+                    <img src="media/pictures/GoodreadsDesktopLowFi2.png" alt="lowfidesktop2" class="lowfi4" width="300">
+                    
+                
+                    <p class="wireframe-desktop-explanation">like the low-fidelity mobile wireframes, these desktop wireframes enhances <b>usability, engagement, and discoverability</b> by modernizing the interface while maintaining the platform's core functionality. with a simplified navigation and layout, users can easily find what they're looking for and have a better understanding of the platform's features and capabilities. the <b>first wireframe (left)</b> makes it easier for users to engage with goodreads' core functions which are to discover books, interact with the community, and maange their reading lists. the <b>second one (right)</b> makes the book details page more informative, engaging, and action-driven, encouraging users to interact with reviews, discussions, and book recommendations effortlessly.</p>
+                </div>
+            </div>  
+  
+                <div class="prototype-goodreads" id="prototype">
+                    <h2>my final prototype</h2>
+                    <p>from the low-fidelity wireframes and the user feedback, i was able to complete this final redesign of <b>goodreads!</b></p>
+    
+                    <a class="final-prototype-link" href="https://www.figma.com/design/ALmVHjkc2oxd5nrXl0hq8W/Goodreads-Redesign?node-id=338-385&t=MOvjZ0PWS3JExvNF-1">click here to see my final prototype!</a>
+    
+                </div>
+                <div class="impact" id="impact">
+                    <h2>impact on users</h2>
+                    <p>users benefit from a cleaner interface, faster and more intuitive navigation, and enhanced book discovery features, making <b>goodreads</b> a more enjoyable platform for tracking reading and engaging with a like-minded community, while providing a more enjoyable experienced with enhanced book discovery and community features</p>
+                </div>
+                <hr class="line">
+
+                <div class="next-steps" id="next-steps">
+                    <h2>next steps</h2>
+                    <ul>
+                        <li>include further research and user testing to refine specific interactions and explore additional features, like integrating with other social media platforms</li>
+                        <li>additional functionality: more personalized reading goals, interactive reading progress tracking, and dynamic book club management</li>
+                    </ul>
+                </div>
+                <div class="takeaways-goodreads" id="takeaways">
+                    <h2>my takeaways</h2>
+                    <p>being the first design project i have ever worked on, this was a great learning process for me. i learned the importance of aligning design decisions with both user needs and business goals, teaching me to appreciate the value of design, continuous feedback, and effective communication. i learned to understand why design is so important, and that all because it looks pretty, it's not the most user-friendly.</p>
+                </div>
+    
+    
+    
+        
+            </section>
+    </div>
+
+
+
+<footer class ="footer">
+    <p class="footer-content-trademark">&copy; dayounglee2025</p>
+    <p id="contact-me"><b>contact me!</b></p>
+    <p id="email">dayounglee526@gmail.com</p>
+    <a href="https://www.linkedin.com/in/dayoung-lee-/">linkedin</a>
+</footer>
+</body>

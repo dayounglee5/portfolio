@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>have ya heard?</title>
+ <link rel="normalize" href="styles/normalizesheet.css">
+ <link rel="stylesheet" href="styles/stylesheet.css">
+<link rel="aboutme" href="aboutme.html">
+<link rel="myprojects" href="myprojects.html">
+<link rel="resume" href="resume.html">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+          <img src="media/pictures/LOGO.png" alt="dayoung-logo">
+        </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden >
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav>
+            <ul>
+              <li><a href='resume.html'>resume</a></li>
+              <li><a href="aboutme.html">about me</a></li>
+              <li><a href="myprojects.html">my projects</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="haveyaheard-container">
+        <section class="haveyaheard-content">
+            <h1>have ya heard?</h1>
+            <img src="media/pictures/HaveYaHeardMockup.png" alt="HaveYaHeardMockup" width="1100">
+        
+            <div class="haveyaheard-casestudy">
+                <div class="haveyaheard-casestudy-box">
+                    <b>case study:</b>
+                    <p><b>have ya heard?</b>, a music discovery app designed for superfans who crave deeper connections with their favorite artists. featuring curated playlists filled with niche tracks, the app highlights songs that only the most dedicated listeners know. by collaborating with platforms like <b>ticketmaster,</b> and <b>live nation</b>, <b>have ya heard?</b> offers personalized music recommendations after users buy concert tickets, creating an immersive experience that extends beyond the live show.</p>
+                </div>
+            </div>
+        
+            <div class="haveyaheard-tableofcontents">
+                <ul>
+                    <li><a href="#introduction">introduction</a></li>
+                    <li class="indent"><a href="#tools-used">tools used</a></li>
+                    <li class="indent"><a href="#our-team">our team</a></li>
+                    <li><a href="#problems">problems</a></li>
+                    <li><a href="#objective">objective</a></li>
+                    <li><a href="#our-users">our users</a></li>
+                    <li><a href="#our-process">our process</a></li>
+                    <li class="indent"><a href="#our-goals">our goals</a></li>
+                    <li class="indent"><a href="#our-business-concept">our business concept</a></li>
+                    <li><a href="#the-solution">the solution</a></li>
+                    <li class="indent"><a href="#limitations">limitations</a></li>
+                    <li><a href="#prototype">our prototype</a></li>
+                    <li><a href="#takeaways">takeaways</a></li>
+                    <li class="indent"><a href="#future-applications">future applications</a></li>
+                </ul>
+            </div>
+            
+            <hr class="line">
+            
+            <div class="introduction" id="introduction">
+                <h2>introduction</h2>
+                <p><b>have ya heard?</b>, a music discovery app designed for superfans who crave deeper connections with their favorite artists. featuring curated playlists filled with niche tracks, the app highlights songs that only the most dedicated listeners know. by collaborating with platforms like <b>ticketmaster,</b> and <b>live nation</b>, <b>have ya heard?</b> offers personalized music recommendations after users buy concert tickets, creating an immersive experience that extends beyond the live show.</p>
+            </div>
+            
+            <div class="tools-used" id="tools-used">
+                <h2>tools used</h2>
+                <ul>
+                    <li>figma</li>
+                    <li>canva</li>
+                </ul>
+            </div>
+            
+            <div class="our-team" id="our-team">
+                <h2>our team</h2>
+                <ul>
+                    <li>raagavi venkatesh</li>
+                    <li>alex slogoff</li>
+                    <li>kellie minus</li>
+                    <li>dayoung lee</li>
+                    <li>simone devoe-caccavo</li>
+                </ul>
+            </div>
+            
+            <hr class="line">
+            
+            <div class="problems" id="problems">
+                <h2>problems</h2>
+                <p>for many fans, the excitement of a concert is often limited to the event itself, with no platform to extend the experience or discover new music related to artist. concert-goers miss opportunities to explore hidden gems and niche tracks that could enhance their appreciation for the artist.</p>
+            </div>
+            
+            <div class="objective" id="objective">
+                <h2>objective</h2>
+                <p>our objective was to create an application to integrate exploration, emotional regulation, productivity enhancement, and entertainment value into your listening playlist by implementing the spotify profile and using a comprehensive database.</p>
+            </div>
+            
+            <div class="our-users" id="our-users">
+                <h2>our users</h2>
+                
+                <h3><u>user 1:</u></h3>
+                <ul>
+                    <li>avid music lover and listener</li>
+                    <li>enjoys going to concerts even when she doesn't know the artist that well</li>
+                    <li>still wants to be able to know the songs and sing along</li>
+                    <li>not a super fan</li>
+                </ul>
+                
+                <h3><u>user 2:</u></h3>
+                <ul>
+                    <li>avid music lover and listener</li>
+                    <li>enjoys going to concerts even when she doesn't know the artist that well</li>
+                    <li>still wants to be able to know the songs and sing along</li>
+                </ul>
+            </div>
+            
+            <hr class="line">
+            
+            <div class="our-process" id="our-process">
+                <h2>our process</h2>
+                
+                <h3 id="our-goals">our goals</h3>
+                <ul>
+                    <li>solve the issue of access to niche songs</li>
+                    <li>implement it into spotify's existing system and connecting it to concert ticket purchases</li>
+                    <li>utilizing user information to compile lists of distinctive songs</li>
+                </ul>
+                
+                <h3 id="our-business-concept">our business concept</h3>
+                <h4><b>the start</b></h4>
+                <p>taking data from the superfans of that artist and finding what songs they frequently listened to</p>
+                
+                <h4><b>the development</b></h4>
+                <p>creating a playlist called <b>have ya heard?</b> filled with those "niche" songs that only the superfans know</p>
+                <p>collaborating with platforms like <b>ticketmaster</b> and <b>live nation</b> to display these playlists after user buys tickets</p>
+            </div>
+            
+            <hr class="line">
+            
+            <div class="the-solution" id="the-solution">
+                <h2>the solution</h2>
+                
+                <h3 id="limitations">limitations</h3>
+                
+                <h4><b>dependence on partnerships</b></h4>
+                <ul>
+                    <li>the app's integration with platforms like <b>ticketmaster</b> and <b>live nation</b> is essential for delivering personalized concert-related recommendations. however, if these partnerships can't be secured or maintained, it may limit the app's ability to enhance the concert experience as intended</li>
+                </ul>
+        
+                <h4><b>niche audience appeal</b></h4>
+                <ul>
+                    <li>while superfans are dedicated, they represent a smaller segment of the general music-listening audience. this could impact the app's ability to scale and attract a broad user base, limiting its reach and potential for growth</li>
+                </ul>
+        
+                <h4><b>competition with mainstream streaming services</b></h4>    
+                <ul>
+                    <li>major streaming platforms offer extensive music libraries and personalized playlists. competing with these well-established services for user attention may be challenging, especially if they already fulfill some of the app's niche discover features</li>
+                </ul>
+            </div>
+            
+            <div class="prototype" id="prototype">
+                <h2>our prototype</h2>
+                <a href="https://www.figma.com/proto/LqfkbHOTrB1zS0LTEP6Dva/Have-Ya-Heard%3F-Initial-Idea?node-id=0-1&t=wCwIPv6cMWnMf9SR-1" class="final-prototype-link"><u>click <b>here</b> to view the initial prototype!</u></a>
+                <p>our initial idea was to create a prototype that worked alongside ticketing applications, like <b>ticketmaster.</b> this would allow users to immediately be able to connect with their favorite artists after buying tickets, and receive personalized recommendations for their favorite artists and genres. this was probably the easiest approach, but also an unrealistic approach because the app would be dependent on ticketing platforms.</p>
+            </div>
+            
+
+            
+            <hr class="line">
+            
+            <div class="takeaways" id="takeaways">
+                <h2>takeaways</h2>
+                
+                <h3 id="future-applications">future applications</h3>
+                
+                <h4><b>artist-generated content</b></h4>
+                <ul>
+                    <li>collaborating with artists to create exclusive content for superfans, such as personal playlists, commentary on rare tracks, or behind-the-scenes stories, could enhance the app's appeal</li>
+                    <li>would provide superfans that unique insight into their favorite artists and deepen their connection</li>
+                </ul>
+        
+                <h4><b>social features for fan communities</b></h4>        
+                <ul>
+                    <li>building out social features, such as fan forums and group playlists, could create a more interactive community</li>
+                    <li>users could discuss their favorite hidden tracks, share rare finds, or even co-create playlists with friends or other superfans</li>
+                </ul>
+        
+                <h4><b>concert and event notifications</b></h4>
+                <ul>
+                    <li>by collaborating with other ticketing agencies, users are able to get those personalized notifications about upcoming concerts, tailored to the user's favorite artists and genres</li>
+                </ul>
+            </div>
+        </section>
+        </div>
+    <footer class ="footer">
+        <p class="footer-content-trademark">&copy; dayounglee2025</p>
+        <p id="contact-me"><b>contact me!</b></p>
+        <p id="email">dayounglee526@gmail.com</p>
+        <a href="https://www.linkedin.com/in/dayoung-lee-/">linkedin</a>
+    </footer>
+</body>
+</html>

@@ -28,6 +28,7 @@
     margin: 0;
 }
 
+
 html, body {
   width: 100%;
   max-width: 100%;
@@ -1915,6 +1916,7 @@ header {
     }
   }
   /* sync w data default */
+  
   .main-page{
     display: grid;
     grid-template-columns: 1fr;
@@ -5266,7 +5268,7 @@ header {
     }
 }
 .main-page{
-  grid-template-columns: 540px;
+  grid-template-columns: 450px;
   margin: 7rem 2rem 5rem 2rem;
   gap: 1rem;
   justify-content: center;

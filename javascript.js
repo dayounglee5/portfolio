@@ -1,14 +1,13 @@
 // TV genre-song probabilities
 const tvGenreSongProbabilities = {
-    "Action": {"Rock": 0.9775, "Pop": 0.0225},
-    "Comedy": {"Pop": 0.2046 + 0.2158, "Rock": 0.5796},
-    "Crime": {"Pop": 0.3903 + 0.4773, "Rock": 0.0313},
-    "Thriller": {"Pop": 0.3903 + 0.4773, "Rock": 0.0313},
-    "Drama": {"Pop": 0.459, "Rock": 0.1202 + 0.2901},
-    "Fantasy": {"Indie Rock": 0.6544},
-    "Horror": {"Pop": 0.5982, "Rock": 0.3674, "Electronica": 0.1010},
+    "Action": {"Rock": 0.9775, "Indie Rock": 0.025},
+    "Comedy": {"Pop": 0.4204, "Rock": 0.5796},
+    "Crime": {"Pop": 0.868, "Electronica": 0.101, "Rock": 0.031},
+    "Drama": {"Pop": 0.459, "Rock": 0.41,"Country":0.13},
+    "Fantasy": {"Indie Rock": 0.6544, "Rock": 0.346},
+    "Horror": {"Pop": 0.619, "Rock": 0.3674, "Alternative": 0.013},
     "Reality-TV": {"Pop": 1.0},
-    "Romance": {"R&B/Hip-Hop": 0.2527, "Rock": 0.3484},
+    "Romance": {"R&B": 0.57, "Rock": 0.38,"Pop:":0.05},
     "Sci-Fi": {"Pop": 0.0856, "Rock": 0.4330 + 0.4814}
   };
   
@@ -45,16 +44,28 @@ const tvGenreSongProbabilities = {
     { title: "'Zombie' by The Cranberries", genre: "Rock" },
     { title: "'bad guy' by Billie Eilish", genre: "Pop" },
     { title: "'Looking At Me' by Sabrina Carpenter", genre: "Pop" },
-    { title: "'September' by Earth, Wind & Fire", genre: "R&B/Hip-Hop" },
+    { title: "'September' by Earth, Wind & Fire", genre: "R&B" },
     { title: "'Songbird' by Fleetwood Mac", genre: "Rock" },
     { title: "'Sweet Child O' Mine' by Guns N' Roses", genre: "Rock" },
-    { title: "'Good as Hell' by Lizzo", genre: "R&B/Hip-Hop" },
+    { title: "'Good as Hell' by Lizzo", genre: "R&B" },
     { title: "'This Love (Taylor's Version)' by Taylor Swift", genre: "Pop" },
     { title: "'Running Up That Hill' by Kate Bush", genre: "Rock / Rock" },
     { title: "'Master of Puppets' by Metallica", genre: "Rock" },
     { title: "'I Don't Want to Set the World on Fire' by The Ink Spots", genre: "Pop" }
   ];
   
+  const genresWithHeatMaps = [
+    "action",
+    "comedy",
+    "crime",
+    "drama",
+    "fantasy",
+    "horror",
+    "reality-tv",
+    "romance",
+    "sci-fi"
+];
+
   function normalizeProbabilities(probDict) {
     const keys = Object.keys(probDict);
     const total = keys.reduce((sum, key) => sum + probDict[key], 0);
@@ -68,7 +79,20 @@ const tvGenreSongProbabilities = {
     keys.forEach(key => normalized[key] = probDict[key] / total);
     return normalized;
   }
-  
+  // heat map function
+  function showHeatMapForGenre(genre) {
+    genresWithHeatMaps.forEach(g => {
+        const heatMapId = `${g}HeatMap`;
+        const heatMapElement = document.getElementById(heatMapId);
+        if (heatMapElement) {
+            if (g === genre) {
+                heatMapElement.style.display = "block";
+            } else {
+                heatMapElement.style.display = "none";
+            }
+        }
+    });
+}
   function predictSongGenre(tvShowGenre) {
     const lowerInput = tvShowGenre.trim().toLowerCase();
     let matchingKey = null;
@@ -114,22 +138,27 @@ const tvGenreSongProbabilities = {
     const rankedGenres = result.rankedGenres;
     const matchingSongs = result.songs;
     const highestProbabilityGenre = result.highestProbabilityGenre;
-  
-    let resultString = `For a <b>${tvShowGenre}</b> show, here’s a ranking of recommended song genres:\n`;
+
+    let article = "a";
+    if (tvShowGenre.trim().toLowerCase() === "action") {
+      article = "an";
+    }
+
+let resultString = `For ${article} <b>${tvShowGenre}</b> show, here’s a ranking of recommended song genres:\n`;
     rankedGenres.forEach(([genre, prob], index) => {
-      resultString += `${index + 1}. ${genre} (${(prob * 100).toFixed(1)}%)\n`;
+        resultString += `${index + 1}. ${genre} (${(prob * 100).toFixed(1)}%)\n`;
     });
-  
+
     resultString += `<br><br>Songs that match the <b>${highestProbabilityGenre}</b> genre:<ul>`;
     matchingSongs.forEach((song) => {
-      resultString += `<li>${song.title}</li>`;
+        resultString += `<li>${song.title}</li>`;
     });
     resultString += `</ul>`;
-    
-  
+
     document.getElementById("result").innerHTML = resultString.replace(/\n/g, '<br>');
-  });
-  
+    showHeatMapForGenre(tvShowGenre.trim().toLowerCase());
+
+});
   
   
   // Help Button

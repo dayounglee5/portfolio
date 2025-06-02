@@ -1997,7 +1997,7 @@ header {
   
   .result-container{
     display: grid;
-    grid-template-columns: 700px;
+    grid-template-columns: 600px;
     grid-template-rows: auto;
     justify-content: center;
   }
@@ -2075,10 +2075,18 @@ header {
       color: white;
     }
   }
-  
+
   .hidden{
     display: none;
   }
+
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
+
   /* sync with data default */
   /* .syncwithdata-container {
     max-width: 1200px;
@@ -2692,6 +2700,9 @@ header {
       margin-bottom: 2rem;
       font-size: 40px;    
     }
+  }
+  .heatmap{
+    margin-left: -2rem;
   }
 }
 

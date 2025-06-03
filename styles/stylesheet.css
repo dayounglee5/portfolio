@@ -5167,6 +5167,12 @@ header {
     margin-bottom: 2rem;
 
   }
+    .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 .search-container{
@@ -5229,6 +5235,12 @@ header {
   margin-left: -1rem;
   font-size: 14px;
 }
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -5362,6 +5374,12 @@ header {
   margin-left: -1rem;
   font-size: 14px;
 }
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 @media screen and (max-width:500px){
@@ -5463,6 +5481,12 @@ header {
   .help-card li {
     margin-left: -1rem;
     font-size: 14px;
+  }
+    .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
   }
 
 }
@@ -6424,7 +6448,12 @@ header {
   margin-left: -1rem;
   font-size: 14px;
 }
-
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 
@@ -7338,7 +7367,12 @@ header {
   margin-left: -1rem;
   font-size: 14px;
 }
-
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -7549,6 +7583,12 @@ header {
   margin-left: -1rem;
   font-size: 14px;
 }
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 
 }
 @media screen and (max-width: 350px){
@@ -7829,6 +7869,12 @@ header {
   border: none;
   color: white;
 }
+  .heatmap{
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-self: center;
+  }
 
 /* .help-card{
   position: fixed;
